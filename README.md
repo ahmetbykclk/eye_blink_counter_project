@@ -1,4 +1,5 @@
 # eye_blink_counter_project
+Dataset Link: https://drive.google.com/file/d/156k6hB1ldLolCUfGaT0d2NHal5Ve0ids/view?usp=sharing
 Gerekli Python Kütüphaneleri -dlib -OpenCV -scipy.spatial -imutils -argparse -imutils -numpy -matplotlib.pyplot
 
 Bu projede "shape_predictor_68_face_landmarks.dat" veri seti kullanılarak yüz algılama işlemi yapılır. Bu algılama işleminden göz ile ilgili veriler kullanılarak göz açıklık oranı hesaplanır. Bu oranlar bir listeye eklenir. Bu listedeki en yüksek değer ve bu değerin listedeki konumuna kadar olan değerlerden en düşük olanı bulunur. Bu sayede listedeki herhangi iki eleman arasındaki en yüksek fark bulunmuş olur. Daha sonra listedeki her ikili elemanın aralarındaki farkların ortalaması hesaplanır. Bu iki değer arasındaki fark verilen belirli bir değişken (programda '10' verilmiştir) değerinden yüksek ise göz kırpılmış sayılır. Ayrıca göz açıklık oranı listesi canlı grafikde gösterilir. Programa argüman olarak bir veriseti ve video kaynağı verilmelidir. Video kaynağı argümanı olarak "webcam" verilirse cihazın kamerası kaynak olarak seçilir.
